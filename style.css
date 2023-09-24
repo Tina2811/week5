@@ -1,65 +1,90 @@
-/* Стили для страницы */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Стили для заголовка */
-header {
-    background-color: #3f3e3e;
-    color: #fff;
+header{
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* Стили для навигационного меню */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Стили для галереи */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    background-color:#808080;
     padding: 20px;
 }
 
-.text-and-gif {
+.container {
     display: flex;
+}
+
+main {
+    flex: 2; 
+    padding: 20px;
+    background-color: #e1e8bd; 
+}
+
+p{
+    display: flex;
+    justify-content:center;
+}
+
+.mainpart{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
-/* Стили для текста */
-.text {
-    flex: 1; /* Занимает всю доступную ширину */
-    font-size: 18px;
+.parent{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-
-.image {
-    max-width: 400px; 
-    margin-left: 40px;
-    transition: transform 0.3s ease;
-    ;}
+.block {
+    background-color: rgb(199, 199, 54);
+    width: 46%;
+    height: 62%;
+}
     
-    .block:hover img{
-        transform: translateX(20px);
-    }
+.bigparent{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bigblock{
+    background-color:  rgb(199, 199, 54); 
+    width: 95%;
+    height: 80%;
+}
+
+aside {
+flex: 1; 
+padding: 20px;
+background-color: #d2e8aa; 
+}
+
+footer {
+    background-color: #808080;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-section{          
+    display: flex;
+    justify-content: space-evenly;
+        align-items: center;
+}
+
+.sectionfooter{
+background-color: rgb(239, 229, 229);
+width: 22%;
+height: 75%;
+text-align:center;
+vertical-align: middle;
+}
+.text{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
